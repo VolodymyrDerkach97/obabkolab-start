@@ -1,24 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { AppA, ImgPes, Clen } from "./app.styled";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppA>
+      <Clen>Start</Clen>
+      <ImgPes src="https://picsum.photos/id/237/600" alt="" />
+    </AppA>
   );
 }
 
