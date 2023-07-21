@@ -6,7 +6,7 @@ import OrderPage from "../../pages/Order";
 import OfferPage from "../../pages/Offer";
 import PricePage from "../../pages/Order";
 import EducationPage from "../../pages/Education";
-import ContactsPage from "../../pages/Order";
+import ContactsPage from "../../pages/Contacts";
 
 function App() {
   return (
