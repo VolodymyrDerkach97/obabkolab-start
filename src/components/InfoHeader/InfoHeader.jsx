@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Follow from "../Follow";
 import {
   ContactList,
@@ -7,10 +8,17 @@ import {
   TellLink,
   TextTellLink,
 } from "./InfoHeader.styled";
+import Modal from "../Modal/Modal";
 
 const InfoHeader = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const togleModal = () => {
+    setShowModal((prev) => !prev);
+  };
   return (
     <Container>
+      {showModal && <Modal onClose={togleModal} />}
       <div>
         <a href="/">
           <img src="./logo.jpg" alt="logo-obabkolab" width="320" height="120" />
@@ -23,7 +31,7 @@ const InfoHeader = () => {
             +380672550705<TextTellLink>с 9:00 до 18:00 з Пн - Пт</TextTellLink>
           </TellLink>
         </ContactList>
-        <FeedbackBtn>Зворотній зв'язок</FeedbackBtn>
+        <FeedbackBtn onClick={togleModal}>Зворотній зв'язок</FeedbackBtn>
       </ContactWrapper>
     </Container>
   );

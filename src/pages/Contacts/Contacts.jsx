@@ -1,9 +1,13 @@
 import Follow from "../../components/Follow";
 import {
+  AddresslLink,
   ContactsInfo,
   ContactsWpapper,
+  EmailLink,
   FormContacts,
-  Inputontacts,
+  InputContacts,
+  TellLink,
+  TextTellLink,
 } from "./Contacts.styled";
 
 const Contacts = () => {
@@ -18,20 +22,28 @@ const Contacts = () => {
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
-      {/* <ContactsInfo>
-        <a href="tel:+380672550705">
-          +380672550705<p>с 9:00 до 18:00 з Пн - Пт</p>
-        </a>
+      <ContactsInfo>
+        <TellLink href="tel:+380672550705">
+          +380672550705<TextTellLink>с 9:00 до 18:00 з Пн - Пт</TextTellLink>
+        </TellLink>
         <Follow />
-        <a href="obabko.lab@gmail.com">obabko.lab@gmail.com</a>
-        <p>Київ, вул. В.Липківського, 33 а</p>
-      </ContactsInfo> */}
+        <EmailLink href="mailto:obabko.lab@gmail.com">
+          obabko.lab@gmail.com
+        </EmailLink>
+        <AddresslLink
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          href="https://www.google.com/maps/search/%D1%83%D0%BB.+%D0%92%D0%B0%D1%81%D0%B8%D0%BB%D0%B8%D1%8F+%D0%9B%D0%B8%D0%BF%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE,+33%D0%B0+%D0%9A%D0%B8%D0%B5%D0%B2+03035/@50.431452,30.4762772,1330m/data=!3m1!1e3?hl=ru&entry=ttu"
+        >
+          Київ, вул. В.Липківського, 33 а
+        </AddresslLink>
+      </ContactsInfo>
 
       <FormContacts>
-        <Inputontacts placeholder="Ім'я" type="text" />
-        <Inputontacts placeholder="Телефон" type="phone" />
-        <Inputontacts placeholder="Пошта" type="email" />
-        <Inputontacts placeholder="Повідомлення" type="text" />
+        <InputContacts placeholder="Ім'я" type="text" />
+        <InputContacts placeholder="Телефон" type="phone" />
+        <InputContacts placeholder="Пошта" type="email" />
+        <InputContacts placeholder="Повідомлення" type="text" />
       </FormContacts>
     </ContactsWpapper>
   );
