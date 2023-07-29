@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const ContactsWpapper = styled.form`
+export const ContactsWpapper = styled.div`
   display: flex;
   justify-content: space-between;
 
@@ -20,6 +20,11 @@ export const FormContacts = styled.form`
 export const InputContacts = styled.input`
   height: 50px;
   padding-left: 15px;
+`;
+export const ButtonForm = styled.button`
+  margin-left: auto;
+  min-width: 100px;
+  height: 50px;
 `;
 export const ContactsInfo = styled.div`
   display: flex;

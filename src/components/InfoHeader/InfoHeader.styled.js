@@ -30,14 +30,3 @@ export const TextTellLink = styled.p`
   font-weight: 500;
   margin: 0;
 `;
-export const FeedbackBtn = styled.button`
-  height: 55%;
-  width: 150px;
-
-  font-size: 18px;
-
-  color: white;
-  background-color: #2196f3;
-  border-radius: 15px;
-  border: 0 solid black;
-`;

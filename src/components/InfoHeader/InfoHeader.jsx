@@ -4,11 +4,11 @@ import {
   ContactList,
   ContactWrapper,
   Container,
-  FeedbackBtn,
   TellLink,
   TextTellLink,
 } from "./InfoHeader.styled";
 import Modal from "../Modal/Modal";
+import Button from "../Button";
 
 const InfoHeader = () => {
   const [showModal, setShowModal] = useState(false);
@@ -31,7 +31,11 @@ const InfoHeader = () => {
             +380672550705<TextTellLink>с 9:00 до 18:00 з Пн - Пт</TextTellLink>
           </TellLink>
         </ContactList>
-        <FeedbackBtn onClick={togleModal}>Зворотній зв'язок</FeedbackBtn>
+        <Button
+          typeButton="button"
+          onClick={togleModal}
+          text="Зворотній зв'язок"
+        />
       </ContactWrapper>
     </Container>
   );

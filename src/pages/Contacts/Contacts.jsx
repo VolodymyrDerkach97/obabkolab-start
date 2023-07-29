@@ -1,3 +1,4 @@
+import Button from "../../components/Button";
 import Follow from "../../components/Follow";
 import {
   AddresslLink,
@@ -18,9 +19,9 @@ const Contacts = () => {
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.2607294613654!2d30.47480747691083!3d50.432101371588665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cec00713dc43%3A0x6f97d799323580e1!2z0YPQuy4g0JLQsNGB0LjQu9C40Y8g0JvQuNC_0LrQvtCy0YHQutC-0LPQviwgMzPQsCwg0JrQuNC10LIsIDAzMDM1!5e1!3m2!1sru!2sua!4v1689966735787!5m2!1sru!2sua"
         width="600"
         height="450"
-        allowfullscreen=""
+        allowFullScreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
       <ContactsInfo>
         <TellLink href="tel:+380672550705">
@@ -44,6 +45,7 @@ const Contacts = () => {
         <InputContacts placeholder="Телефон" type="phone" />
         <InputContacts placeholder="Пошта" type="email" />
         <InputContacts placeholder="Повідомлення" type="text" />
+        <Button text="Надіслати" />
       </FormContacts>
     </ContactsWpapper>
   );
