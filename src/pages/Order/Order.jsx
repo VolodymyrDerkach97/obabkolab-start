@@ -1,5 +1,5 @@
 const Order = () => {
-  return <div>Замовити протези</div>;
+  return <div id="order">Замовити протези</div>;
 };
 
 export default Order;

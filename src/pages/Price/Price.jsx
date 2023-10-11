@@ -1,4 +1,4 @@
 const Price = () => {
-  return <div>Ціни</div>;
+  return <div id="price">Ціни</div>;
 };
 export default Price;

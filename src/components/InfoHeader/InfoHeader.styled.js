@@ -1,15 +1,17 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
+  position: relative;
   display: flex;
   justify-content: space-between;
-  /* outline: 2px dashed pink; */
+  align-items: center;
 `;
+
 export const ContactWrapper = styled.div`
   display: flex;
-  gap: 25px;
+  gap: 35px;
   margin-left: auto;
-  align-items: center;
+  margin-right: 80px;
 `;
 
 export const ContactList = styled.div`
@@ -17,16 +19,18 @@ export const ContactList = styled.div`
   gap: 15px;
 
   align-items: center;
-  /* outline: 2px dashed green; */
+  justify-content: center;
 `;
+
 export const TellLink = styled.a`
   text-align: center;
-  font-size: 25px;
-  font-weight: 500;
-  color: grey;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
 `;
+
 export const TextTellLink = styled.p`
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0;
 `;

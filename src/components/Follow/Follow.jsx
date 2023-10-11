@@ -12,7 +12,7 @@ const FollowLink = () => {
           rel="noopener noreferrer nofollow"
           href="https://instagram.com/obabkolab?igshid=MzRlODBiNWFlZA=="
         >
-          <BsInstagram size={50} color="mediumpurple" />
+          <BsInstagram size={23} color="white" />
         </a>
       </li>
       <li>
@@ -21,7 +21,7 @@ const FollowLink = () => {
           rel="noopener noreferrer nofollow"
           href="viber://chat?number=+380672550705"
         >
-          <FaViber size={50} color="purple" />
+          <FaViber size={23} color="white" />
         </a>
       </li>
       <li>
@@ -30,7 +30,7 @@ const FollowLink = () => {
           rel="noopener noreferrer nofollow"
           href="https://youtube.com/@ObabkoStudy?feature=sharea"
         >
-          <AiOutlineYoutube size={60} color="red" />
+          <AiOutlineYoutube size={30} color="white" />
         </a>
       </li>
     </FollowList>

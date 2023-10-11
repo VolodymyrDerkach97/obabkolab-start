@@ -8,7 +8,7 @@ import {
   TextTellLink,
 } from "./InfoHeader.styled";
 import Modal from "../Modal/Modal";
-import Button from "../Button";
+import Navigation from "../Navigation";
 
 const InfoHeader = () => {
   const [showModal, setShowModal] = useState(false);
@@ -21,9 +21,16 @@ const InfoHeader = () => {
       {showModal && <Modal onClose={togleModal} />}
       <div>
         <a href="/">
-          <img src="./logo.jpg" alt="logo-obabkolab" width="320" height="120" />
+          <img
+            src="./logo.jpg"
+            alt="logo-obabkolab"
+            width="320"
+            height="120"
+            style={{ backgroundColor: "black" }}
+          />
         </a>
       </div>
+      <Navigation />
       <ContactWrapper>
         <Follow />
         <ContactList>
@@ -31,11 +38,6 @@ const InfoHeader = () => {
             +380672550705<TextTellLink>с 9:00 до 18:00 з Пн - Пт</TextTellLink>
           </TellLink>
         </ContactList>
-        <Button
-          typeButton="button"
-          onClick={togleModal}
-          text="Зворотній зв'язок"
-        />
       </ContactWrapper>
     </Container>
   );

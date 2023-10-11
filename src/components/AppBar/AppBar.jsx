@@ -1,15 +1,14 @@
-import { Container } from "./AppBar.styled";
-import Navigation from "../Navigation";
+import { Container, Header } from "./AppBar.styled";
+
 import InfoHeader from "../InfoHeader/InfoHeader";
 
 const AppBar = () => {
   return (
-    <header>
+    <Header>
       <Container>
         <InfoHeader />
-        <Navigation />
       </Container>
-    </header>
+    </Header>
   );
 };
 

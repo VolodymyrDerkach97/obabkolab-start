@@ -4,7 +4,8 @@ export const FollowList = styled.ul`
   display: flex;
   gap: 15px;
   align-items: center;
-
+  margin: 0;
+  padding: 0;
   /* outline: 2px dashed green; */
 `;
 

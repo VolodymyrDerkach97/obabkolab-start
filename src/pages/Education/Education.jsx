@@ -1,6 +1,6 @@
 import {} from "./Education.styled";
 
 const Education = () => {
-  return <div>Навчання</div>;
+  return <div id="education">Навчання</div>;
 };
 export default Education;

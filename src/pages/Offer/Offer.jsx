@@ -1,5 +1,5 @@
 const Offer = () => {
-  return <div>Публічний оффер</div>;
+  return <div id="public-offer">Публічний оффер</div>;
 };
 
 export default Offer;

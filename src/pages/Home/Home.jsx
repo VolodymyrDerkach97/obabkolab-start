@@ -4,7 +4,7 @@ import {} from "./Home.styled";
 const Home = () => {
   return (
     <>
-      <div>Home</div>
+      <div id="home">Home</div>
       <SimpleSlider />
     </>
   );
