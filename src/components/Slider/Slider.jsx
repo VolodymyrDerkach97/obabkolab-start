@@ -17,6 +17,7 @@ const SimpleSlider = () => {
     "./8.jpg",
     "./9.jpg",
   ];
+
   const settings = {
     dots: true,
     infinite: true,
