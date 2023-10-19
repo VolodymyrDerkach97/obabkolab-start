@@ -2,13 +2,21 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./components/App";
-import { BrowserRouter } from "react-router-dom";
 
+import { ThemeProvider } from "@emotion/react";
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+const theme = {
+  colors: {
+    accent: "rgb(54, 175, 173)",
+    secondary: "#fff",
+  },
+};
+
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/">
+    <ThemeProvider theme={theme}>
       <App />
-    </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>
 );

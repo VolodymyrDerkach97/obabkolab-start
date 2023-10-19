@@ -13,7 +13,7 @@ import {
 
 const Contacts = () => {
   return (
-    <div id="contacts">
+    <section id="contacts">
       <ContactsWpapper>
         <iframe
           title="maps"
@@ -49,7 +49,7 @@ const Contacts = () => {
           <Button text="Надіслати" />
         </FormContacts>
       </ContactsWpapper>
-    </div>
+    </section>
   );
 };
 

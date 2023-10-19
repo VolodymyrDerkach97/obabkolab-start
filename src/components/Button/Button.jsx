@@ -1,11 +1,20 @@
-import { ButtonStyled } from "./Button.styled";
+import { ButtonSecondary, ButtonPrimary } from "./Button.styled";
 
-const Button = ({ typeButton = "submit", text, onClick }) => {
-  return (
-    <ButtonStyled type={typeButton} onClick={onClick}>
-      {text}
-    </ButtonStyled>
+const ButtonComponent = ({
+  variant = "primary",
+  typeButton,
+  onClick,
+  children,
+}) => {
+  return variant !== "primary" ? (
+    <ButtonSecondary type={typeButton} onClick={onClick}>
+      {children}
+    </ButtonSecondary>
+  ) : (
+    <ButtonPrimary type={typeButton} onClick={onClick}>
+      {children}
+    </ButtonPrimary>
   );
 };
 
-export default Button;
+export default ButtonComponent;

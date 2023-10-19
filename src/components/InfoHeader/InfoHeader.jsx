@@ -35,7 +35,8 @@ const InfoHeader = () => {
         <Follow />
         <ContactList>
           <TellLink href="tel:+380672550705">
-            +380672550705<TextTellLink>с 9:00 до 18:00 з Пн - Пт</TextTellLink>
+            +38 (067) 255 07 05
+            <TextTellLink>с 9:00 до 18:00 з Пн - Пт</TextTellLink>
           </TellLink>
         </ContactList>
       </ContactWrapper>
