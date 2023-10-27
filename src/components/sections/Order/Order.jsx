@@ -1,5 +1,5 @@
 const Order = () => {
-  return <section id="order">Замовити протези</section>;
+  return <section id="order">Order</section>;
 };
 
 export default Order;

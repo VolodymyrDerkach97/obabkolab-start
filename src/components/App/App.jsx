@@ -3,12 +3,14 @@ import HomeSection from "components/sections/Home";
 import Title from "components/sections/Title";
 import Team from "components/sections/Team";
 
-// import OrderSection from "../sections/Order";
-// import OfferSection from "../sections/Offer";
-// import PriceSection from "../sections/Order";
-// import EducationSection from "../sections/Education";
-// import ContactsSection from "../sections/Contacts";
+import OrderSection from "components/sections/Order";
+import OfferSection from "components/sections/Offer";
+import PriceSection from "components/sections/Order";
+import EducationSection from "components/sections/Education";
+import ContactsSection from "components/sections/Contacts";
+
 import { Container } from "./App.styled";
+import Instagram from "components/Instagram";
 
 function App() {
   return (
@@ -18,11 +20,12 @@ function App() {
         <HomeSection />
         <Title />
         <Team />
-        {/* <OrderSection /> */}
-        {/* <OfferSection /> */}
-        {/* <PriceSection /> */}
-        {/* <EducationSection /> */}
-        {/* <ContactsSection /> */}
+        <Instagram />
+        <OrderSection />
+        <OfferSection />
+        <PriceSection />
+        <EducationSection />
+        <ContactsSection />
       </Container>
     </>
   );

@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
   padding-right: 0;
 
   cursor: pointer;
+
   &:hover {
     background-color: rgb(54, 175, 173);
   }

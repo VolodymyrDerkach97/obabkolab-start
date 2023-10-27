@@ -1,5 +1,4 @@
-import Button from "../../components/Button";
-import Follow from "../../components/Follow";
+import Follow from "components/Follow";
 import {
   AddresslLink,
   ContactsInfo,
@@ -10,6 +9,7 @@ import {
   TellLink,
   TextTellLink,
 } from "./Contacts.styled";
+import Button from "components/Button";
 
 const Contacts = () => {
   return (

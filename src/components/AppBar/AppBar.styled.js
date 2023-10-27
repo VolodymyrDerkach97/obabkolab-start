@@ -6,7 +6,8 @@ export const Header = styled.header`
   right: 0;
   z-index: 10;
   width: 100%;
-  background-color: transparent;
+  background-color: ${(props) =>
+    props.isScrolled ? "rgba(6,5,7,.95)" : "transparent"};
 `;
 
 export const Container = styled.div`

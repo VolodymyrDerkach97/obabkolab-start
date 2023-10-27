@@ -3,7 +3,7 @@ import {} from "./Team.styled";
 
 const Team = () => {
   return (
-    <section id="price">
+    <section id="team">
       <Slider />
     </section>
   );

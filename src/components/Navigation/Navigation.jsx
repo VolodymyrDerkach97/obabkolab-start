@@ -17,7 +17,15 @@ const Navigation = () => {
   };
 
   return (
-    <Wrapper onClick={togleBurger}>
+    <Wrapper
+      onClick={togleBurger}
+      onMouseEnter={() => {
+        setInBurger(false);
+      }}
+      onMouseLeave={() => {
+        setInBurger(true);
+      }}
+    >
       <WrapperBurger>
         <RxHamburgerMenu size={28} color="white" />
         <TextMenu>МЕНЮ</TextMenu>
@@ -26,6 +34,7 @@ const Navigation = () => {
         <NavStyled>
           <LinkStyled href="#home">Домашня сторінка</LinkStyled>
           <LinkStyled href="#order">Замовити шаблон</LinkStyled>
+          <LinkStyled href="#team">Команда</LinkStyled>
           <LinkStyled href="#public-offer">Публічна оферта</LinkStyled>
           <LinkStyled href="#price">Ціни</LinkStyled>
           <LinkStyled href="#education">Навчання</LinkStyled>
